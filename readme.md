@@ -38,8 +38,6 @@ The callback to be wrapped.
 
 #### ctx
 
-##### foo
-
 If provided, the `this` value will be bound to `ctx`.
 It defaults to whatever the wrapper is called with.
 
