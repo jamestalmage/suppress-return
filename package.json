@@ -1,6 +1,6 @@
 {
   "name": "suppress-return",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Wrap a callback, suppressing it's return value.",
   "license": "MIT",
   "repository": "jamestalmage/suppress-return",
