@@ -7,7 +7,7 @@ test('no context', t => {
 	t.plan(2);
 
 	var result = suppress(function() {
-		t.same(slice.call(arguments), ['foo', 'bar']);
+		t.deepEqual(slice.call(arguments), ['foo', 'bar']);
 		return 'baz';
 	})('foo', 'bar');
 
@@ -18,8 +18,8 @@ test('with context', t => {
 	t.plan(3);
 
 	var result = suppress(function() {
-		t.same(slice.call(arguments), ['hi', 'howdy']);
-		t.same(this, 'hello');
+		t.deepEqual(slice.call(arguments), ['hi', 'howdy']);
+		t.deepEqual(this, 'hello');
 		return 'bye';
 	}, 'hello')('hi', 'howdy');
 
